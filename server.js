@@ -32,6 +32,10 @@ mongoose
 
 const Note = require('./models/Note');
 
+app.get("/", (req, res) => {
+  res.send("This is textshare server")
+})
+
 // REST API: Fetch a note by URL
 app.get('/api/notes/:url', async (req, res) => {
   const { url } = req.params;
