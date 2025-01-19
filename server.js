@@ -32,7 +32,7 @@ mongoose
 
 const Note = require('./models/Note');
 
-app.get("/", (req, res) => {
+app.get("/api/", (req, res) => {
   res.send("This is textshare server")
 })
 
